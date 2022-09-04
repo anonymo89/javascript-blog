@@ -97,11 +97,10 @@ for(let activeArticle of activeArticles){
 }
 }
 
+  generateTitleLinks();
 
-generateTitleLinks();
+  const links = document.querySelectorAll('.titles a');
 
-const links = document.querySelectorAll('.titles a');
-
-for(let link of links){
+  for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
