@@ -35,12 +35,12 @@ for(let activeArticle of activeArticles){
   /* get 'href' attribute from the clicked link */
 
   const articleSelector = clickedElement.getAttribute('href');
-  	console.log(articleSelector);
+    console.log(articleSelector);
 
   /* find the correct article using the selector (value of 'href' attribute) */
   
-  	const targerArticle = document.querySelector(articleSelector);
-  	console.log(targerArticle);
+    const targerArticle = document.querySelector(articleSelector);
+    console.log(targerArticle);
 
   /* add class 'active' to the correct article */
   
@@ -81,18 +81,18 @@ for(let activeArticle of activeArticles){
     console.log(articleTitle);
     
 
-	/* create HTML of the link */
-	 const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
-	 console.log(linkHTML);
+  /* create HTML of the link */
+   const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
+   console.log(linkHTML);
 
-	/* insert link into titleList */
+  /* insert link into titleList */
    
    titleList.innerHTML = titleList.innerHTML + linkHTML;
-	 
+   
   /* insert link into HTML variable */
 
     html = html + linkHTML;
-	 console.log(html + linkHTML);
+   console.log(html + linkHTML);
 
 }
 }
