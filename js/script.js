@@ -170,8 +170,8 @@ function tagClickHandler(event){
   for(let tag of activeTags) {
 
 
-  /* remove class active */
-  tag.articleTagsArray.remove('active');
+    /* remove class active */
+    tag.articleTagsArray.remove('active');
   }
 
   /* END LOOP: for each active tag link */
@@ -185,11 +185,11 @@ function tagClickHandler(event){
   for(let tag of tagHref) {
 
 
-  /* add class active */
-  tag.classList.add('active');
+    /* add class active */
+    tag.classList.add('active');
 
   /* END LOOP: for each found tag link */
-}
+  }
 
   /* execute function "generateTitleLinks" with article selector as argument */
   generateTitleLinks('[data-tags~="' + tag + '"]');
@@ -198,14 +198,28 @@ function tagClickHandler(event){
 function addClickListenersToTags(){
 
   /* find all links to tags */
+  const allLinksToTags = document.querySelectorAll(links);
+
 
   /* START LOOP: for each link */
+  for(let link of allLinksToTags){
 
-  /* add tagClickHandler as event listener for that link */
+    /* add tagClickHandler as event listener for that link */
+    link.addEventListener('click',tagClickHandler);
+
 
   /* END LOOP: for each link */
+  }
 }
 
 addClickListenersToTags();
+ 
+
+
+
+
+
+
+
 
 
