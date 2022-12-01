@@ -336,7 +336,7 @@ function addClickListenersToAuthors() {
     link.addEventListener('click', authorClickHandler);
   /* END LOOP: for each link */
 }
-addClickListenersToAuthors();
+
 
 
 
