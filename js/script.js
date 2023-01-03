@@ -48,6 +48,7 @@ const optArticleSelector = '.post',
   optArticleTagsSelector ='.post-tags .list',
   optArticleAuthorSelector = '.post-author',
   optAuthorRightList = '.sidebar .authors';
+  /*optTagsListSelector = '.tags .list';*/
 
 function generateTitleLinks(customSelector = ''){ 
 
@@ -337,6 +338,7 @@ function addClickListenersToAuthors() {
   /* END LOOP: for each link */
 }
 addClickListenersToAuthors();
+
 
 
 
